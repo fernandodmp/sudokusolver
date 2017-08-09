@@ -23,7 +23,7 @@ bool msmFileira(int x, int y, int num) {
 
     return false;
 }
-bool msmSubmatriz(int x, int y, int num) {
+bool msmSubMatriz(int x, int y, int num) {
 
     if (x < 3) {
         x = 0;
@@ -53,7 +53,7 @@ bool msmSubmatriz(int x, int y, int num) {
 }
 
 bool isPlaceable(int x, int y, int i){
-    if(msmColuna(x, y, i) || msmFileira(x, y, i) || msmSubmatriz(x, y, i)){
+    if(msmColuna(x, y, i) || msmFileira(x, y, i) || msmSubMatriz(x, y, i)){
         return false;
     }
     return true;
